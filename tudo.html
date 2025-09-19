@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -126,7 +126,7 @@
 .btn-professor {
   background-color: transparent;
   color: #f7f6f6;
-  font-size: 0.9em;
+  font-size: 1.2em;
   border: none;
   cursor: pointer;
   margin: 10px;
@@ -375,7 +375,7 @@
       <button class="pin-key">9</button>
     </div>
     <div class="pin-row">
-      <button class="pin-key" data-action="clear">C</button>
+      <button class="pin-key" data-action="clear">🗑</button>
       <button class="pin-key">0</button>
       <button class="pin-key" data-action="backspace">⌫</button>
     </div>
@@ -488,48 +488,48 @@
 </div>
 
 <script>
-  const perguntas3 = [
-    { q: "5 + 7 = ?", options: ["10", "12", "13", "14"], correct: 1, category: "Soma"},
-    { q: "15 - 8 = ?", options: ["6", "7", "8", "5"], correct: 1, category: "Subtração" },
-    { q: "9 + 4 = ?", options: ["12", "14", "13", "15"], correct: 2, category: "Soma" },
-    { q: "18 - 6 = ?", options: ["12", "11", "10", "13"], correct: 0, category: "Subtração" },
-    { q: "7 + 7 = ?", options: ["12", "15", "13", "14"], correct: 3, category: "Soma" },
-    { q: "20 - 9 = ?", options: ["10", "12", "11", "9"], correct: 2, category: "Subtração" },
-    { q: "6 + 8 = ?", options: ["12", "14", "13", "15"], correct: 1, category: "Soma" },
-    { q: "20 - 9 = ?", options: ["10", "12", "11", "9"], correct: 2, category: "Subtração" }
+ const perguntas3 = [
+    { q: "Quanto é 348 + 126?", options: ["464", "484", "474", "494"], correct: 2, category: "Operações com Números Naturais"},
+    { q: "Quanto é 6 × 4?", options: ["20", "18", "24", "28"], correct: 2, category: "Operações com Números Naturais" },
+    { q: "Quanto é 9 × 3?", options: ["21", "24", "27", "30"], correct: 2, category: "Operações com Números Naturais" },
+    { q: "Quanto é 10 ÷ 2?", options: ["2", "5", "4", "6"], correct: 1, category: "Operações com Números Naturais" },
+    { q: "O número que vem depois de 699 é:", options: ["600 ", " 700", " 799", "701"], correct: 1, category: "Sistema de Numeração Decimal" },
+    { q: "Qual é o valor posicional do algarismo 7 no número 572?", options: ["7 unidades", "7 dezenas", "7 centenas", "70 centenas"], correct: 1, category: "     Sistema de Numeração Decimal" },
+    { q: "Qual é a decomposição correta do número 736?", options: ["700 + 30 + 6", "70 + 300 + 6", "700 + 36", "7 + 36"], correct: 0, category: "Sistema de Numeração Decimal" },
+    { q: "Qual é o número que tem 6 centenas, 2 dezenas e 5 unidades?", options: ["625", "652", "265", "562"], correct: 0, category: "Sistema de Numeração Decimal" }
   ];
 
   const perguntas4 = [
-    { q: "6 x 7 = ?", options: ["42", "36", "40", "48"], correct: 0, category: "Multiplicação" },
-    { q: "56 ÷ 8 = ?", options: ["6", "8", "7", "9"], correct: 2, category: "Divisão" },
-    { q: "9 x 5 = ?", options: ["45", "40", "35", "50"], correct: 0, category: "Multiplicação" },
-    { q: "72 ÷ 9 = ?", options: ["6", "9", "8", "7"], correct: 2, category: "Divisão" },
-    { q: "8 x 8 = ?", options: ["64", "72", "56", "60"], correct: 0, category: "Multiplicação" },
-    { q: "63 ÷ 7 = ?", options: ["8", "9", "7", "10"], correct: 1, category: "Divisão" },
-    { q: "12 x 4 = ?", options: ["48", "36", "40", "44"], correct: 0, category: "Multiplicação" },
-    { q: "63 ÷ 7 = ?", options: ["8", "9", "7", "10"], correct: 1, category: "Divisão" }
+    { q: "Quanto é 325 + 478?", options: ["703", "803", "793", "813"], correct: 2, category: "Operação com Números Naturais" },
+    { q: "Qual é o resultado de 942 – 586?", options: ["356", "376", "366", "386"], correct: 0, category: "Operação com Números Naturais" },
+    { q: "Se João tinha 250 reais e gastou 175, com quanto ele ficou?", options: ["65", "75", "70", "85"], correct: 1, category: "Operação com Números Naturais" },
+    { q: "Calcule 36 × 4:", options: ["124", "144", "134", "154"], correct: 1, category: "Operação com Números Naturais" },
+    { q: "Se uma barra de chocolate foi dividida em 8 partes iguais e Maria comeu 3, qual fração ela comeu?", options: ["3/4", "5/8", "3/8", "8/3"], correct: 2, category: "Questões de Frações" },
+    { q: "Se você tem 3 fatias de 3 iguais, qual fração você tem?", options: [" 3/3", "2/3", " 1/3", "1/2"], correct: 0, category: "Questões de Frações" },
+    { q: "Qual fração representa “um terço de um bolo”?", options: ["1/2", "1/4", "1/3", "1/6"], correct: 2, category: "Questões de Frações" },
+    { q: "Qual fração é equivalente a 3/6?", options: ["1/2", "2/3", " 1/3", "3/3"], correct: 0, category: "Questões de Frações" }
   ];
 
   const perguntas5 = [
-    { q: "João comprou 3 cadernos por R$12 cada. Quanto gastou?", options: ["R$36", "R$30", "R$24", "R$40"], correct: 0, category: "Multiplicação" },
-    { q: "Um ônibus transporta 45 pessoas. Quantas pessoas em 6 ônibus?", options: ["270", "300", "280", "250"], correct: 0, category: "Multiplicação" },
-    { q: "Se uma pizza custa R$48 e é dividida em 8 fatias, quanto custa cada fatia?", options: ["R$6", "R$8", "R$5", "R$7"], correct: 0, category: "Divisão" },
-    { q: "Um aluno leu 120 páginas em 4 dias. Quantas páginas por dia?", options: ["25", "30", "40", "35"], correct: 1, category: "Divisão" },
-    { q: "Se 5 caixas têm 125 balas no total, quantas balas em cada caixa?", options: ["30", "20", "25", "15"], correct: 2, category: "Divisão" },
-    { q: "Um produto de R$200 teve desconto de R$50. Quanto custa agora?", options: ["R$150", "R$160", "R$140", "R$130"], correct: 0, category: "Multiplicação" },
-    { q: "Qual o resultado de 120 ÷ 5?", options: ["25", "24", "22", "20"], correct: 1, category: "Divisão"},
-    { q: "João comprou 3 cadernos por R$12 cada. Quanto gastou?", options: ["R$36", "R$30", "R$24", "R$40"], correct: 0, category: "Multiplicação" }
+    { q: "Qual é o valor de 125 × 4?", options: ["450", "520", " 500", "525"], correct: 2, category: "Operações com Números Naturais" },
+    { q: "Calcule 56 × 6:", options: ["326", "346", "336", "356"], correct: 2, category: "Operações com Números Naturais" },
+    { q: "Uma escola tem 432 alunos e quer dividir igualmente em 8 turmas. Quantos alunos em cada turma?", options: ["52", "54", "53", "55"], correct: 1, category: "Operações com Números Naturais" },
+    { q: "Calcule a divisão 48 ÷ 6:", options: ["6", "8", "7", "9"], correct: 1, category: "Operações com Números Naturais" },
+    { q: "Complete 2,3 + 1,4 = ?", options: ["3,6", "3,8", "3,7", "3,9"], correct: 2, category: "Número Decimal" },
+    { q: "Qual número decimal representa meio?", options: [" 0,05", "5,0", "0,5", "0,50"], correct: 2, category: "Número Decimal" },
+    { q: "Escreva em decimal: 3 unidades e 2 décimos", options: ["3,02", "32", " 3,2", "0,32"], correct: 2, category: "Número Decimal"},
+    { q: "Complete  4,5 – 2,3= ?", options: ["1,9", "2,2", "2,1", " 2,3"], correct: 2, category: "Número Decimal" }
   ];
 
   const perguntas6 = [
-    { q: "Qual é 1/2 de 3/4?", options: ["3/8", "3/4", "2/4", "1/8"], correct: 0, category: "Fração" },
-    { q: "Resolva: 2x = 10. Quanto vale x?", options: ["4", "5", "10", "2"], correct: 1, category: "Equação" },
-    { q: "Quanto é 3/5 + 1/5?", options: ["4/5", "3/10", "5/10", "5/5"], correct: 0, category: "Fração" },
-    { q: "Resolva: 12 ÷ (3 + 1)", options: ["3", "4", "2", "6"], correct: 0, category: "Equação" },
-    { q: "Qual fração representa metade?", options: ["1/4", "1/2", "2/4", "2/3"], correct: 1, category: "Fração" },
-    { q: "Resolva: x + 7 = 12", options: ["4", "5", "6", "3"], correct: 1, category: "Equação" },
-    { q: "Se uma barra de chocolate tem 12 pedaços e você come 3, qual fração foi comida?", options: ["1/4", "1/2", "1/3", "1/6"], correct: 0, category: "Fração" },
-    { q: "Resolva: 2x = 10. Quanto vale x?", options: ["4", "5", "10", "2"], correct: 1, category: "Equação" }
+    { q: "Calcule a multiplicação 76 × 9", options: ["674", "694", "684", " 704"], correct: 2, category: " Operações com Números Naturais" },
+    { q: "Calcule a Divisão  1.152 ÷ 8", options: ["142", "146", "148", "144"], correct: 3, category: " Operações com Números Naturais" },
+    { q: "Multiplique 245 × 5:", options: ["1.125", "1.325", "1.425", " 1.225"], correct: 3, category: " Operações com Números Naturais" },
+    { q: "Uma escola tem 1.080 alunos e quer dividir igualmente em 12 turmas. Quantos alunos em cada turma?", options: ["85", "90", "95", "100"], correct: 1, category: " Operações com Números Naturais" },
+    { q: "Qual é 10% de 200?", options: ["10", "15", "20", "25"], correct: 2, category: "   Porcentagem " },
+    { q: "Um produto custa R$ 150,00 e teve 20% de desconto. Quanto é o desconto?", options: [" R$ 25", " R$ 35", "R$ 39", "R$ 30"], correct: 3, category: " Porcentagem" },
+    { q: "Qual é 50% de 90?", options: ["40", "50", "45", "55"], correct: 2, category: "Porcentagem" },
+    { q: "Se uma nota tem 80 questões e você acertou 90% delas, quantas questões acertou?", options: ["70", "72", "75", "80"], correct: 1, category: " Porcentagem" }
   ];
 
   const perguntas2 = [
